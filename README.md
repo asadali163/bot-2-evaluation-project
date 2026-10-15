@@ -27,5 +27,3 @@ Create an app from this repository with the main file `dashboard/app.py` and Pyt
 - `src/`: preprocessing, measurements and the scorer of every item (`src/scoring/`), and the shape detector
 - `models/`: the final rule limits and trained models of every item and of the shape detector
 
-This repository contains no data. Uploaded drawings are processed in memory and in a temporary file that is deleted
-immediately.
