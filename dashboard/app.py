@@ -169,7 +169,7 @@ with left:
         {expert_html}</div>
         <div style="margin-top:.8rem" class="note">{result.method}</div></div>""", unsafe_allow_html=True)
     for note in result.notes:
-        st.caption(note)
+        st.info(note)
     st.write("")
     picture_left, picture_right = st.columns(2)
     picture_left.image(cv2.cvtColor(image, cv2.COLOR_BGR2RGB), caption="Uploaded drawing", width="stretch")
