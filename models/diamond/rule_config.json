@@ -1,0 +1,34 @@
+{
+  "shape": "Diamond",
+  "folder": "Diagonal",
+  "method": "rule-based (four-sided fit)",
+  "basic_shape": {
+    "convex": true,
+    "corner_angle_deg": [
+      30,
+      150
+    ],
+    "max_side_ratio": 3,
+    "min_on_outline": 0.58
+  },
+  "closure": {
+    "max_gap_px": 130,
+    "max_overlap_px": 25,
+    "max_doubled_px": 46.0,
+    "note": "gap and overlap limits calibrated separately (the manual ties them 1:2 by inches)",
+    "overlap": "largest of overshoot, doubled length and (scans only) thick length"
+  },
+  "edges": {
+    "max_side_ratio": 1.56,
+    "rubric_value": 1.5
+  },
+  "orientation": {
+    "max_rotation_deg": 23.5,
+    "measured_on": "the two diagonals"
+  },
+  "overall_size": {
+    "min_longest_diagonal_fraction_of_box": 0.385
+  },
+  "mask_size_px": 512,
+  "cross_validated_QWK": 0.554
+}

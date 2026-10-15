@@ -1,0 +1,16 @@
+{
+  "shape": "Overlapping pencils",
+  "recommended_method": "fine-tuned EfficientNet-B0, runs A + B (notebook 05)",
+  "network": "EfficientNet-B0 (ImageNet start), classifier = Dropout(0.3) + Linear(1280, 6): probability that each facet earns its point",
+  "facets": ["basic_shape", "closure", "edges", "orientation", "overlap", "overall_size"],
+  "input": "src/shape_scorers/overlapped_pencils_scorer/prep.py: preprocess, then crop_canvas onto a 448 x 448 canvas",
+  "canvas": 448,
+  "runs": {"A": {"size": 256, "seed": 0}, "B": {"size": 288, "seed": 1}},
+  "folds": 5,
+  "model_files": "finetuned/run{A,B}_fold{0..4}.pt",
+  "views": [[0, 1.0], [-5, 1.0], [5, 1.0], [0, 0.92]],
+  "views_meaning": "test-time views: (rotation in degrees, zoom); facet probabilities are averaged over them",
+  "total": "most probable total of the facet probabilities, with basic shape 0 => total 0",
+  "new_drawings": "mean over the runs of the mean over their five fold networks",
+  "cross_validated": {"QWK": 0.5531, "QWK_95_CI": [0.47, 0.64], "accuracy": 0.637}
+}

@@ -1,0 +1,27 @@
+{
+  "shape": "Star",
+  "method": "rule-based (outer envelope: five tips and five inner corners)",
+  "basic_shape": {
+    "five_tips_found": true,
+    "min_on_outline": 0.875
+  },
+  "closure": {
+    "max_gap_px": 10,
+    "max_overlap_px": 15,
+    "overlap": "largest of the doubled stretch and the line off the star outline"
+  },
+  "edges": {
+    "max_edges_ratio": 1.45,
+    "rubric_value": 1.5,
+    "edges_ratio": "larger of max/min point length and max/min point width"
+  },
+  "orientation": {
+    "max_rotation_deg": 10.0,
+    "measured_on": "all five tips together"
+  },
+  "overall_size": {
+    "min_extent_fraction_of_box": 0.415
+  },
+  "mask_size_px": 512,
+  "cross_validated_QWK": 0.6709
+}

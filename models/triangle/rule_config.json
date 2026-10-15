@@ -1,0 +1,29 @@
+{
+  "shape": "Triangle",
+  "method": "rule-based (triangle fit)",
+  "basic_shape": {
+    "min_corner_angle_deg": 25,
+    "max_side_ratio": 3,
+    "min_on_outline": 0.75
+  },
+  "closure": {
+    "pixels_per_inch": 289.0,
+    "max_gap_px": 36.125,
+    "max_overlap_px": 72.25,
+    "max_doubled_px": 14.0,
+    "overlap": "largest of overshoot, doubled length and (scans only) thick length"
+  },
+  "edges": {
+    "max_side_ratio": 1.85,
+    "rubric_value": 1.5
+  },
+  "orientation": {
+    "max_rotation_deg": 18.75,
+    "apex_must_be_above_base": true
+  },
+  "overall_size": {
+    "min_longest_side_fraction_of_box": 0.375
+  },
+  "mask_size_px": 512,
+  "cross_validated_QWK": 0.6966
+}

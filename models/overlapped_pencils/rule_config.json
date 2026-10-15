@@ -1,0 +1,36 @@
+{
+  "shape": "Overlapping pencils",
+  "folder": "Overlapped pencils",
+  "method": "rule-based (split into two pencils through the enclosed regions)",
+  "basic_shape": {
+    "split_into_two_pencils": "required unless the drawing cannot be split",
+    "min_elongation": 1.45
+  },
+  "closure": {
+    "max_thick_ratio": 1.7,
+    "max_tail_px": null
+  },
+  "edges": {
+    "max_edges_ratio": 1.415,
+    "rubric_value": 1.5
+  },
+  "orientation": {
+    "left_pencil_points": "down",
+    "right_pencil_points": "up",
+    "reference_tilt_deg": {
+      "left": 14.242590641857365,
+      "right": -25.7746248246436
+    },
+    "max_tilt_deviation_deg": 15.5
+  },
+  "overlap": {
+    "min_overlap_fraction": 0.075,
+    "max_overlap_fraction": 0.28,
+    "overlap_fraction": "overlap area / smaller pencil area"
+  },
+  "overall_size": {
+    "min_extent_fraction_of_box": 0.38
+  },
+  "mask_size_px": 512,
+  "cross_validated_QWK": 0.3828
+}

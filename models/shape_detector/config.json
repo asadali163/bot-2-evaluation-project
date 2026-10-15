@@ -1,0 +1,18 @@
+{
+  "backbone": "EfficientNet-B0, ImageNet weights (torchvision), frozen, classifier layer removed",
+  "input": "src.shape_detection.detection_input: cleaned mask cropped to the drawing, 224 x 224",
+  "classifier": "StandardScaler + LogisticRegression(C=0.1)",
+  "classes": [
+    "circle",
+    "diamond",
+    "overlapped_circle",
+    "overlapped_pencils",
+    "square",
+    "star",
+    "triangle",
+    "wave"
+  ],
+  "n_training_images": 4275,
+  "cross_validated_accuracy": 0.996,
+  "ask_user_to_check_if_confidence_below": 0.8
+}

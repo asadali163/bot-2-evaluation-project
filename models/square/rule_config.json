@@ -1,0 +1,28 @@
+{
+  "shape": "Square",
+  "method": "rule-based (quadrilateral fit)",
+  "basic_shape": {
+    "convex": true,
+    "max_side_ratio": 3,
+    "max_corner_deviation_deg": 45,
+    "min_on_outline": 0.75
+  },
+  "closure": {
+    "pixels_per_inch": 115.0,
+    "max_gap_px": 14.375,
+    "max_overlap_px": 28.75,
+    "overlap": "largest of overshoot, doubled length and (scans only) thick length",
+    "photo_if_median_paper_brightness_at_most": 235
+  },
+  "edges": {
+    "max_side_ratio": 1.5
+  },
+  "orientation": {
+    "max_tilt_deg": 14.125
+  },
+  "overall_size": {
+    "min_side_fraction_of_box": 0.27
+  },
+  "mask_size_px": 512,
+  "cross_validated_QWK": 0.8024
+}

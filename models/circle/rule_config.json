@@ -1,0 +1,10 @@
+{
+  "shape": "Circle",
+  "method": "rule-based (notebook 03), calibrated on all drawings",
+  "min_size_fraction": 0.34,
+  "pixels_per_inch": 248.0,
+  "corner_angle": 65.0,
+  "max_edges_ratio": 3,
+  "mask_size_px": 512,
+  "cross_validated_QWK": 0.5
+}

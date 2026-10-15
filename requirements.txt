@@ -1,0 +1,14 @@
+# Dashboard only. CPU build of PyTorch (Streamlit Community Cloud has no GPU).
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+numpy==2.5.3
+pandas==3.0.6
+scipy==1.18.1
+opencv-python-headless==5.0.0.93
+scikit-image==0.26.0
+scikit-learn==1.9.1   # must match the version the models were saved with
+joblib==1.6.0
+pillow==12.3.0
+torch==2.14.1
+torchvision==0.29.1
+streamlit==1.66.0

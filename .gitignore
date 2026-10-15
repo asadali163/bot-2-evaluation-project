@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Never commit data: drawings, labels or file lists of the dataset are confidential
+Data/
+data/
+*.png
+*.jpg
+*.jpeg
+*.csv
+*.xlsx
+*.docx
+*.pdf
+
+# Streamlit secrets and local files
+.streamlit/secrets.toml
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

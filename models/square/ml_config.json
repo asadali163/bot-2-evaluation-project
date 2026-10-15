@@ -1,0 +1,36 @@
+{
+  "shape": "Square",
+  "method": "rules (notebook 02) for basic shape, edges, orientation and size + ML closure model",
+  "closure_model": {
+    "file": "closure_model.joblib",
+    "type": "random forest",
+    "feature_set": "ours",
+    "features": [
+      "photo",
+      "on_outline",
+      "corner_deviation",
+      "convex",
+      "side_ratio",
+      "tilt",
+      "rotation",
+      "side_fraction",
+      "overshoot",
+      "gap",
+      "doubled_length",
+      "thick_length",
+      "overlap",
+      "off_outline_length",
+      "pieces",
+      "ink_fraction"
+    ],
+    "fail_if_probability_at_least": 0.4600000000000001,
+    "settings": {
+      "randomforestclassifier__max_features": "sqrt",
+      "randomforestclassifier__min_samples_leaf": 2
+    },
+    "external_features_from": null
+  },
+  "other_facets": "see rule_config.json",
+  "cross_validated_QWK": 0.8235,
+  "cross_validated_accuracy": 0.964
+}

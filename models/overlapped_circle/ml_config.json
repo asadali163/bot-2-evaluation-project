@@ -1,0 +1,69 @@
+{
+  "shape": "Overlapping circles",
+  "recommended_method": "+ ML overlap",
+  "steps": {
+    "+ ML closure": {
+      "file": "closure_model.joblib",
+      "type": "random forest",
+      "features": [
+        "photo",
+        "size",
+        "fit_error",
+        "on_circles",
+        "elongation",
+        "radius_ratio",
+        "area_ratio",
+        "tilt",
+        "overlap_depth",
+        "centre_distance",
+        "gap",
+        "doubled_length",
+        "off_circles_length",
+        "loose_ends",
+        "overlap"
+      ],
+      "fail_if_probability_at_least": 0.45000000000000007
+    },
+    "+ ML overlap": {
+      "file": "overlap_model.joblib",
+      "type": "random forest",
+      "features": [
+        "photo",
+        "size",
+        "fit_error",
+        "on_circles",
+        "elongation",
+        "radius_ratio",
+        "area_ratio",
+        "tilt",
+        "overlap_depth",
+        "centre_distance",
+        "gap",
+        "doubled_length",
+        "off_circles_length",
+        "loose_ends",
+        "overlap"
+      ],
+      "fail_if_probability_at_least": 0.31000000000000005
+    }
+  },
+  "other_facets": "see rule_config.json",
+  "cross_validated": {
+    "always 6": {
+      "QWK": 0.0,
+      "accuracy": 0.7268
+    },
+    "rule-based (nb 02)": {
+      "QWK": 0.4628,
+      "accuracy": 0.7533
+    },
+    "+ ML closure": {
+      "QWK": 0.4924,
+      "accuracy": 0.7685
+    },
+    "+ ML overlap": {
+      "QWK": 0.4934,
+      "accuracy": 0.7704
+    }
+  }
+}

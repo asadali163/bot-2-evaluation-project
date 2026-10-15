@@ -1,0 +1,21 @@
+{
+  "shape": "Wave",
+  "method": "rule-based (centre line split into two arcs)",
+  "basic_shape": {
+    "arc_counts_if_turning_at_least_deg": 60,
+    "requires": "exactly 2 arcs, turning in opposite directions",
+    "max_arc_turn_deg": 300
+  },
+  "edges": {
+    "max_width_ratio": 1.44,
+    "rubric_value": 1.5
+  },
+  "orientation": {
+    "max_mean_opening_angle_from_vertical_deg": 43.0
+  },
+  "overall_size": {
+    "min_largest_extent_fraction_of_box": 0.405
+  },
+  "mask_size_px": 512,
+  "cross_validated_QWK": 0.6847
+}

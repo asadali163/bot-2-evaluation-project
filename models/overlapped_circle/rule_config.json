@@ -1,0 +1,32 @@
+{
+  "shape": "Overlapping circles",
+  "folder": "Overlapped circle",
+  "method": "rule-based (two fitted circles)",
+  "basic_shape": {
+    "two_circles_fitted": true,
+    "min_on_circles": 0.475
+  },
+  "closure": {
+    "max_gap_px": 140,
+    "max_overlap_px": 8,
+    "overlap": "longest stretch where a circle's line is drawn twice"
+  },
+  "edges": {
+    "max_radius_ratio": 1.6,
+    "max_elongation": 3,
+    "rubric_size_ratio": 2
+  },
+  "orientation": {
+    "max_tilt_deg": 13.25
+  },
+  "overlap": {
+    "min_overlap_depth": 0.25,
+    "max_overlap_depth": 0.65,
+    "overlap_depth": "(r1 + r2 - centre distance) / smaller diameter"
+  },
+  "overall_size": {
+    "min_extent_fraction_of_box": 0.47
+  },
+  "mask_size_px": 512,
+  "cross_validated_QWK": 0.4628
+}
